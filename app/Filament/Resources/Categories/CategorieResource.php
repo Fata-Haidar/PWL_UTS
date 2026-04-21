@@ -7,7 +7,7 @@ use App\Filament\Resources\Categories\Pages\EditCategorie;
 use App\Filament\Resources\Categories\Pages\ListCategories;
 use App\Filament\Resources\Categories\Schemas\CategorieForm;
 use App\Filament\Resources\Categories\Tables\CategoriesTable;
-use App\Models\Categorie;
+use App\Models\Kategori;
 use BackedEnum;
 use Filament\Resources\Resource;
 use Filament\Schemas\Schema;
@@ -16,11 +16,11 @@ use Filament\Tables\Table;
 
 class CategorieResource extends Resource
 {
-    protected static ?string $model = Categorie::class;
+    protected static ?string $model = Kategori::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
-    protected static ?string $recordTitleAttribute = 'Categorie';
+    protected static ?string $recordTitleAttribute = 'kategori_nama';
 
     public static function form(Schema $schema): Schema
     {
@@ -34,9 +34,7 @@ class CategorieResource extends Resource
 
     public static function getRelations(): array
     {
-        return [
-            //
-        ];
+        return [];
     }
 
     public static function getPages(): array
