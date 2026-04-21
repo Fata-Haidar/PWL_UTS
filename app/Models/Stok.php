@@ -8,7 +8,7 @@ class Stok extends Model
 {
     protected $table = 't_stok';
     protected $primaryKey = 'stok_id';
-
+p
     protected $fillable = [
         'supplier_id',
         'barang_id',

@@ -69,4 +69,4 @@ class User extends Authenticatable
     {
         return $this->hasMany(Penjualan::class, 'user_id', 'user_id');
     }
-}
+}p
