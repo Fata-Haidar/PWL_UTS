@@ -18,8 +18,7 @@ class PenjualanDetailResource extends Resource
 {
     protected static ?string $model = PenjualanDetail::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
+protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-shopping-cart';
     protected static ?string $recordTitleAttribute = 'Penjualan Detail';
 
     public static function form(Schema $schema): Schema
