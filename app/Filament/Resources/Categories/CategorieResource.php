@@ -18,8 +18,7 @@ class CategorieResource extends Resource
 {
     protected static ?string $model = Kategori::class;
 
-    protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
-
+protected static string|BackedEnum|null $navigationIcon = 'heroicon-o-tag';
     protected static ?string $recordTitleAttribute = 'kategori_nama';
 
     public static function form(Schema $schema): Schema
